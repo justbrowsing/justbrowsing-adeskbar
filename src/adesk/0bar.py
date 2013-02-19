@@ -178,17 +178,17 @@ class BarManager():
 
     def create_menu(self):
         ## Edit preferences
-        #self.popupMenu = gtk.Menu()
+        self.popupMenu = gtk.Menu()
         menuPopup = gtk.ImageMenuItem(gtk.STOCK_PREFERENCES)
         menuPopup.connect("activate", self.edit_config)
-        #self.popupMenu.add(menuPopup)
+        self.popupMenu.add(menuPopup)
         
         ## Quit (really ?)
         menuPopup = gtk.ImageMenuItem(gtk.STOCK_QUIT)
         menuPopup.connect("activate", self.doquit)
-        #self.popupMenu.add(menuPopup)
+        self.popupMenu.add(menuPopup)
      
-        #self.popupMenu.show_all()
+        self.popupMenu.show_all()
 
     def resize_and_seticon(self, data=None):
         # resize and update icon for all plugins
