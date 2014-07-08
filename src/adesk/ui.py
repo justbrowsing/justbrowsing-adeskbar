@@ -153,7 +153,7 @@ class TooltipWindow(Window):
 
     def stop(self):
         if self.timeout:
-            gobject.source_remove(self.timeout)
+#            gobject.source_remove(self.timeout)
             self.timeout = None
         self.hide()
         self.plugin = None
